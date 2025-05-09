@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emergency Response Patterns in NYC - Group 11</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="project-title">
+        <h1>Emergency Response Patterns in NYC</h1>
+        <p class="group-id">Group 11</p>
+      </div>
+      <nav>
+        <a href="#intro">Intro</a>
+        <a href="#boroughs_zip">Zip by Borough</a>
+        <a href="#ems_boroughs">EMS by Borough</a>
+        <a href="#severity_log">Severity</a>
+        <a href="#zip_map">Zip Map</a>
+        <a href="#zip_summary">Zip Summary</a>
+        <a href="#heatmap_time">Time Heatmap</a>
+        <a href="#interactive_boroughs">Interactive Boroughs</a>
+        <a href="#interactive_ems">EMS Map</a>
+        <a href="#fire_types">Fire Types</a>
+        <a href="#data-sources">Data</a>
+        <a href="#discussion">Discussion</a>
+        <a href="#contributions">Team</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="intro" class="anchor-offset">
+      <h2>Project Overview</h2>
+      <p>
+        This project analyzes emergency response patterns in New York City using public data from the
+        <strong>Fire Department of New York City (FDNY)</strong>. The visualizations explore EMS and Fire Dispatch data,
+        highlighting spatial and temporal trends.
+      </p>
+      <p>
+        The goal is to communicate key insights visually and clearly — without requiring technical knowledge — so that anyone,
+        even non-data people, can engage with the findings.
+      </p>
+      <p>
+        <strong>Genre:</strong> Hybrid data story — combining narrative structure with reader-driven exploration.
+      </p>
+      <p><strong>Target Audience:</strong> Curious non-technical users, fellow DTU students, or citizens interested in NYC emergency data.</p>
+      <p><strong>TODO:</strong> Add deeper story framing, problem motivation, and user scenario (why this data matters).</p>
+    </section>
+
+    <!-- Static Visuals First -->
+    <section id="boroughs_zip">
+      <h2>Zip Distribution by Borough</h2>
+      <p>This static graph shows how various zip codes are distributed across NYC’s boroughs. Click to zoom.</p>
+      <div class="zoom-container">
+        <img src="static/boroughs_by_zip_full.png" alt="boroughs_by_zip_full"/>
+      </div>
+    </section>
+
+    <section id="ems_boroughs">
+      <h2>EMS Incident Counts by Borough</h2>
+      <p>Static visualization of how EMS calls are distributed across boroughs. Click to zoom.</p>
+      <div class="zoom-container">
+        <img src="static/ems_boroughs_full.png" alt="ems_boroughs_full"/>
+      </div>
+    </section>
+
+    <section id="severity_log">
+      <h2>Severity Category Comparison</h2>
+      <p>Shows incident counts by severity on a log scale. Useful to spot frequency extremes. Click to zoom.</p>
+      <div class="zoom-container">
+        <img src="static/severity_comparison_log.png" alt="severity_comparison_log"/>
+      </div>
+    </section>
+
+    <!-- Maps and Aggregates -->
+    <section id="zip_map">
+      <h2>Geographic Zip Code Map</h2>
+      <p>This interactive map displays emergency activity by zip code. Hover and explore.</p>
+      <iframe src="pages/zip_map.html"></iframe>
+    </section>
+
+    <section id="zip_summary">
+      <h2>Zip Code Incident Summary</h2>
+      <p>Tabular summary of total incidents by zip. Useful for quantitative comparison.</p>
+      <iframe src="pages/zip_summary.html"></iframe>
+    </section>
+
+    <!-- Time Patterns -->
+    <section id="heatmap_time">
+      <h2>Temporal Heatmap of Incidents</h2>
+      <p>Heatmap showing patterns across time of day and days of week.</p>
+      <iframe src="pages/heatmap_time.html"></iframe>
+    </section>
+
+    <!-- Interactive Data -->
+    <section id="interactive_boroughs">
+      <h2>Interactive Incident Breakdown by Borough</h2>
+      <p>Explore breakdown of EMS and fire activity by borough interactively.</p>
+      <iframe src="pages/interactive_boroughs.html"></iframe>
+    </section>
+
+    <section id="interactive_ems">
+      <h2>EMS Precincts Interactive Map</h2>
+      <p>Zoom in on EMS precincts to discover hotspots and activity levels.</p>
+      <iframe src="pages/interactive_ems_precincts.html"></iframe>
+    </section>
+
+    <section id="fire_types">
+      <h2>Fire Incident Types Interactive Graph</h2>
+      <p>Interactive breakdown of fire types over time and frequency.</p>
+      <iframe src="pages/interactive_fire_types.html"></iframe>
+    </section>
+
+    <!-- Data Sources -->
+    <section id="data-sources" class="anchor-offset">
+      <h2>Data Sources</h2>
+      <p>
+        All data used in this project is publicly available through <strong>NYC OpenData</strong>, published by FDNY.
+      </p>
+      <ul>
+        <li>
+          <strong>EMS Incident Dispatch Data</strong> –
+          <a href="https://data.cityofnewyork.us/Public-Safety/EMS-Incident-Dispatch-Data/76xm-jjuj/about_data" target="_blank">View EMS Dataset</a><br/>
+          Data spans from call creation to dispatch close. Last updated: <em>May 5, 2025</em>.
+        </li>
+        <li>
+          <strong>Fire Incident Dispatch Data</strong> –
+          <a href="https://data.cityofnewyork.us/Public-Safety/Fire-Incident-Dispatch-Data/8m42-w767/about_data" target="_blank">View Fire Dataset</a><br/>
+          Fire calls collected from Starfire system. Last updated: <em>May 5, 2025</em>.
+        </li>
+      </ul>
+      <p><strong>TODO:</strong> Briefly explain filtering, cleaning, and dataset size choices here.</p>
+    </section>
+
+    <!-- Discussion -->
+    <section id="discussion" class="anchor-offset">
+      <h2>Discussion</h2>
+      <p><strong>What went well:</strong> TODO - Summarize successful aspects like user interaction, readability, plot clarity.</p>
+      <p><strong>What was challenging:</strong> TODO - Mention anything difficult (e.g. data quality, cleaning millions of rows, JS integration).</p>
+      <p><strong>What could be improved:</strong> TODO - Talk about performance optimization, UI design upgrades, or additional insights.</p>
+    </section>
+
+    <!-- Contributions -->
+    <footer id="contributions" class="anchor-offset">
+      <h2>Contributions</h2>
+      <div class="contribution">
+        <h3>Souar Ramzi Mohammad Ali - s191446</h3>
+        <p>Worked on data cleaning, interactive visualizations, generating HTML, static figures, and the overall website.</p>
+      </div>
+      <div class="contribution">
+        <h3>Kovács, Eszter - s232976</h3>
+        <p>Handled data processing, static/interactive charts, and zip summarization.</p>
+      </div>
+      <div class="contribution">
+        <h3>Gyöngyösi, Márk - s232976</h3>
+        <p>Wrote explanations, created plots and heatmaps, and assisted in visualization design.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.zoom-container').forEach(container => {
+      container.addEventListener('click', () => {
+        container.classList.toggle('active');
+        document.body.classList.toggle('zoomed');
+      });
+    });
+  </script>
+</body>
+</html>
