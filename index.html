@@ -39,9 +39,10 @@
     <section id="time_trends">
      <h2>Tracing the Pulse of Emergencies: Total Incidents Over Time</h2>
       <p>To understand how emergency response flows across New York City, we begin with the big picture: the sheer volume of incidents recorded over time. Every day, thousands of 911 calls pour in — each representing an urgent moment in someone’s life.</p>
-      <p>Our first visualization captures the rhythm of these emergencies, revealing how call volume shifts across months and years. Are there seasonal surges? Do certain times of year consistently strain the system? Are external factors — like heatwaves, holidays, or large-scale events — influencing the data?</p>
       <div class="zoom-container">
         <img src="static/time_barchart.png" alt="time_barchart"/>
+      <p>Our first visualization captures the rhythm of these emergencies, revealing how call volume shifts across months and years. Are there seasonal surges? Do certain times of year consistently strain the system? Are external factors — like heatwaves, holidays, or large-scale events — influencing the data?</p>
+      <p>Even this simple bar plot reveals valuable insights—It’s a straightforward visualization, but surprisingly powerful.</p>  
     </section>
 
         <!-- Maps and Aggregates -->
@@ -49,14 +50,16 @@
       <h2>Mapping the Pulse: Hotspots and Trends Across ZIP Codes</h2>
       <p>From time to time, it's not just when emergencies happen that matters — it’s where. Our next step zooms into the ZIP code level, providing a granular map of incident density across the city.</p>
       <iframe src="pages/nyc_incidents_zip_map.html"></iframe>
-      <p>Here, each ZIP code is represented by color-coded, size-adjustable markers, showing the intensity and volume of EMS and Fire calls. Darker shades and larger markers highlight neighborhoods with higher emergency loads.</p>
-      <p>The map offers more than just a count, it also reveals the types of emergencies occurring in different areas.</p>
+      <p><strong>Let’s break down what you’re seeing!<strong><p>
+      <p>The map displays all five boroughs, each divided into ZIP codes and color-coded for easy navigation. Within each ZIP code, you'll notice colored markers that indicate the intensity and volume of EMS and Fire calls—ranging from small green dots in lower-incident areas to large red dots in neighborhoods with frequent emergencies. These visual cues highlight areas with higher emergency loads.</p>
+      <p>But the map goes beyond just counting calls—it reveals the types of emergencies happening in each area. Click on any marker to see specific details about the incidents.</p>
       <ul>
-        <li><strong>EMS Incidents:</strong> Are more common in areas with dense populations or specific health vulnerabilities.</li>
-        <li><strong>Fire (Medical):</strong> May correlate with older buildings, complex construction, or housing with limited safety infrastructure.</li>
-        <li><strong>Fire (Non-Medical):</strong> Often point to risks around maintenance, fire prevention, or structural safety.</li>
+        <li><strong>EMS Incidents </strong> tend to be more frequent in densely populated areas or communities with specific health challenges.</li>
+        <li><strong>Fire (Medical)</strong> responses may be linked to older buildings, dense construction, or housing with limited safety infrastructure.</li>
+        <li><strong>Fire (Non-Medical)</strong>  calls often reflect risks related to property maintenance, fire prevention practices, or structural safety issues.</li>
       </ul>
       <p>By layering incident type onto geography, we begin to ask deeper questions: Do the same ZIP codes show up across categories? Are these emergencies linked to social, economic, or environmental conditions?</p>
+      <p>Let’s continue exploring and see what other insights we can uncover!</p>
     </section>
 
     <section id="incidents_pp">
