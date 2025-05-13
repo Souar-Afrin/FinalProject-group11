@@ -172,28 +172,6 @@ footer h2 {
   margin-bottom: 30px;
 }
 
-/* === Contribution Cards === */
-.contribution {
-  max-width: 800px;
-  margin: 0 auto 20px auto;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-}
-
-.contribution h3 {
-  margin: 0 0 10px 0;
-  color: #2e8b57;
-  font-weight: 700;
-}
-
-.contribution p {
-  margin: 0;
-  font-size: 15px;
-  color: #555;
-}
-
 /* === Data Sources & Intro Section === */
 #intro,
 #data-sources,
@@ -229,4 +207,11 @@ footer h2 {
   .zoom-container.active {
     transform: scale(1.3) translate(-50%, -50%);
   }
+}
+/* === White section titles for specific sections === */
+#intro h2,
+#data-sources h2,
+#discussion h2 {
+  color: white;
+  border-left-color: white;
 }
