@@ -20,6 +20,7 @@
         <a href="#incidents_pp">Police Precincts</a>
         <a href="#severity">Severity Levels</a>
         <a href="#interactive_incident_types">Incident Types</a>
+        <a href="#conclusion">Conclusion</a>
         <a href="#data-sources">Data Source</a>
       </nav>
     </div>
@@ -28,7 +29,7 @@
 
   <main>
     <section id="intro" class="anchor-offset">
-      <h1>Exploring NYC's Emergency Response</h1>
+      <h2>Exploring NYC's Emergency Response</h2>
       <p>When you call 911, you’re not just asking for help — you’re counting on it to arrive fast. In a city as massive and complex as New York, with over 8 million people across five diverse boroughs, response time can depend on where you are, what happened, and who’s available to respond.</p>
       <p>Sometimes it’s an EMS crew rushing to a medical emergency. Other times, it’s a firetruck racing toward smoke or flames. And often, it’s both — arriving at the same scene to provide rescue and critical care together. But how often do EMS and Fire actually respond side by side? Which neighborhoods get faster, more coordinated responses? What types of emergencies draw both services? Are there patterns in injury severity, incident type, or geographic location that shape these responses?</p>
       <p>These are big questions, but they’re exactly what this project sets out to explore. We’ve analyzed millions of 911 dispatch records spanning several years to understand how emergency response unfolds across NYC. By combining EMS and Fire data and mapping where and when joint responses occur — or don’t — we’re shedding light on how the city reacts during its most critical moments.</p>
@@ -66,8 +67,8 @@
     <section id="incidents_pp">
       <h2>Zooming In: EMS and Fire Response by Precinct</h2>
       <p>While ZIP codes offer a broad neighborhood view—helping you ask questions like "Should I move here?" or "Could I find a safer area in another zone?"—precinct-level analysis takes us even deeper into the operational realities. Police precincts, often used as administrative and deployment zones, provide a closer look at how emergency services are truly performing in the field.</p>
-      <iframe src="pages/bokeh_ems_precincts.html"></iframe>
-      <iframe src="pages/bokeh_fire_precincts.html"></iframe>
+      <iframe src="pages/ems_precincts.html"></iframe>
+      <iframe src="pages/fire_precincts.html"></iframe>
       <p>Each of the interactive plots highlights critical insights about emergency response patterns by precinct. Each bar shows the total number of incidents for either EMS or Fire services. The  orange line represents the average response time in seconds. This is a crucial metric: longer response times can indicate areas where emergency services are overwhelmed or face local obstacles.</p>
       <p>Use the interactive features to explore individual boroughs and dive into specific police precincts by selecting only even a few of them. You’ll be able to see how incident volume and response times vary across neighborhoods, often revealing surprising contrasts.You may find precincts where both EMS and Fire are responding to a high number of emergencies—yet response times remain high, indicating a shortage of ambulances, fire trucks, or available personnel. Alternatively, some areas with relatively low incident counts still show long response times, hinting at deeper inefficiencies—such as hard-to-reach neighborhoods, poor road access, or insufficient emergency resources.</p>
       <p>For example, some precincts in the Bronx report both high incident counts and slower response times. These may be densely populated neighborhoods, where heavy traffic, difficult terrain, or a high frequency of emergencies stretch local resources thin. In contrast, parts of Manhattan may show faster response times in areas with stronger infrastructure or more available units—although the borough's congestion and complexity can also lead to slower responses in certain pockets.</p>
@@ -87,12 +88,18 @@
       <h2>What Kind of Emergencies Are Happening Out There?</h2>
       <p>We’ve already uncovered where emergencies happen most and how quickly EMS and Fire teams respond. But to truly grasp the pulse of New York City’s emergency landscape, we need to ask a deeper question: What kind of crises are unfolding—and where?</p>
       <p>To answer that, we turned to detailed classifications from both EMS and Fire incident data, mapping them by police precinct and borough. The two interactive visualizations let us peel back the layers of emergency response in the city.</p>
-      <iframe src="pages/bokeh_ems_categories.html"></iframe>
-      <iframe src="pages/bokeh_fire_categories.html"></iframe>
+      <iframe src="pages/ems_categories.html"></iframe>
+      <iframe src="pages/fire_categories.html"></iframe>
       <p>With just a few clicks, you can explore specific types of emergencies—ranging from medical incidents like cardiac arrests, unconscious patients, and asthma attacks, or on the other plot fire-related events such as structural fires, hazardous materials, and automatic alarms. These are revealing not just where emergencies are occurring, but what’s actually happening in those moments of distress.</p>
       <p>Some precincts see sharp spikes in medical calls tied to substance use or respiratory issues, hinting at underlying health and social challenges. Meanwhile, certain neighborhoods show repeated fire activity—from structural blazes to gas leaks—suggesting places where infrastructure or housing quality may be in need of closer scrutiny.</p>
       <p>Color-coded bars offer another layer of insight, painting a borough-level picture at a glance. Brooklyn and the Bronx, in particular, emerge frequently in the higher ranges across both EMS and Fire categories. Whether this reflects higher population densities, socioeconomic factors, or environmental risks, it’s clear that some areas carry a heavier emergency burden than others.</p>
     </section>
+
+    <section id="conclusion">
+      <h2>Conclusion</h2>
+      <p>Emergencies happen fast — and how a city responds can make all the difference. By mapping incidents across time, neighborhoods, and severity levels, this story uncovers how EMS and Fire services work together under pressure. It's a look into the systems that protect us, the gaps that still exist, and the importance of understanding where, when, and how help arrives.</p>
+    </section>
+
 
     <!-- Data Sources -->
     <section id="data-sources" class="anchor-offset">
