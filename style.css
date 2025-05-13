@@ -183,6 +183,19 @@ footer h2 {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
+/* Apply the border-left to all h2 titles within sections */
+#intro h2,
+#data-sources h2,
+#discussion h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #1a1a1a;
+  border-left: 5px solid #7286d3;  /* Blue vertical line */
+  padding-left: 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
 #data-sources ul {
   padding-left: 20px;
 }
