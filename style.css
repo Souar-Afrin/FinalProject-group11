@@ -120,7 +120,7 @@ footer h2 {
   margin-bottom: 30px;
 }
 
-/* Data source block */
+/* === Data Sources & Intro Section === */
 #intro,
 #data-sources,
 #discussion {
@@ -130,6 +130,7 @@ footer h2 {
   margin-bottom: 40px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
 /* Apply the border-left to all h2 titles within sections */
 #intro h2,
 #data-sources h2,
@@ -142,12 +143,20 @@ footer h2 {
   margin-top: 0;
   margin-bottom: 10px;
 }
+
+/* Ensure margin and padding are correct for other elements */
+#intro h2, #data-sources h2, #discussion h2 {
+  margin-top: 0;
+}
+
+/* Additional styles for list items inside #data-sources */
 #data-sources ul {
   padding-left: 20px;
 }
 
 #data-sources li {
   margin-bottom: 15px;
+  line-height: 1.5;
 }
 
 
